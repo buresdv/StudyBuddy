@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635169BA284419C000626EB3 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635169B9284419C000626EB3 /* Help.swift */; };
+		635169BC28441AEF00626EB3 /* Stop Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635169BB28441AEF00626EB3 /* Stop Program.swift */; };
 		636F010D28428D6A00A991CD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F010C28428D6A00A991CD /* main.swift */; };
+		636F011528428D9600A991CD /* DavidFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 636F011428428D9600A991CD /* DavidFoundation */; };
+		636F0117284290F800A991CD /* App State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F0116284290F800A991CD /* App State.swift */; };
+		6383921C28454C9300AADF43 /* Get Current Date and Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383921B28454C9300AADF43 /* Get Current Date and Time.swift */; };
+		6383921E28454EA900AADF43 /* Format Date for Printing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383921D28454EA900AADF43 /* Format Date for Printing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		635169B9284419C000626EB3 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		635169BB28441AEF00626EB3 /* Stop Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop Program.swift"; sourceTree = "<group>"; };
 		636F010928428D6A00A991CD /* StudyBuddy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudyBuddy; sourceTree = BUILT_PRODUCTS_DIR; };
 		636F010C28428D6A00A991CD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		636F0116284290F800A991CD /* App State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App State.swift"; sourceTree = "<group>"; };
+		6383921B28454C9300AADF43 /* Get Current Date and Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get Current Date and Time.swift"; sourceTree = "<group>"; };
+		6383921D28454EA900AADF43 /* Format Date for Printing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format Date for Printing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,12 +43,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636F011528428D9600A991CD /* DavidFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		635169B8284419B300626EB3 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				635169B9284419C000626EB3 /* Help.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		636F010028428D6A00A991CD = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +77,30 @@
 		636F010B28428D6A00A991CD /* StudyBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				635169B8284419B300626EB3 /* Pages */,
+				636F01182842918C00A991CD /* Logic */,
 				636F010C28428D6A00A991CD /* main.swift */,
+				636F0116284290F800A991CD /* App State.swift */,
 			);
 			path = StudyBuddy;
+			sourceTree = "<group>";
+		};
+		636F01182842918C00A991CD /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				636F01192842919200A991CD /* Dates */,
+				635169BB28441AEF00626EB3 /* Stop Program.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		636F01192842919200A991CD /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				6383921B28454C9300AADF43 /* Get Current Date and Time.swift */,
+				6383921D28454EA900AADF43 /* Format Date for Printing.swift */,
+			);
+			path = Dates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +119,9 @@
 			dependencies = (
 			);
 			name = StudyBuddy;
+			packageProductDependencies = (
+				636F011428428D9600A991CD /* DavidFoundation */,
+			);
 			productName = StudyBuddy;
 			productReference = 636F010928428D6A00A991CD /* StudyBuddy */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +150,9 @@
 				Base,
 			);
 			mainGroup = 636F010028428D6A00A991CD;
+			packageReferences = (
+				636F011328428D9600A991CD /* XCRemoteSwiftPackageReference "DavidFoundation" */,
+			);
 			productRefGroup = 636F010A28428D6A00A991CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636F0117284290F800A991CD /* App State.swift in Sources */,
+				6383921C28454C9300AADF43 /* Get Current Date and Time.swift in Sources */,
+				6383921E28454EA900AADF43 /* Format Date for Printing.swift in Sources */,
 				636F010D28428D6A00A991CD /* main.swift in Sources */,
+				635169BA284419C000626EB3 /* Help.swift in Sources */,
+				635169BC28441AEF00626EB3 /* Stop Program.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		636F011328428D9600A991CD /* XCRemoteSwiftPackageReference "DavidFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buresdv/DavidFoundation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		636F011428428D9600A991CD /* DavidFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 636F011328428D9600A991CD /* XCRemoteSwiftPackageReference "DavidFoundation" */;
+			productName = DavidFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 636F010128428D6A00A991CD /* Project object */;
 }
