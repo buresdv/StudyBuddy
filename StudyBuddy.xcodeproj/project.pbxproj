@@ -11,9 +11,11 @@
 		635169BC28441AEF00626EB3 /* Stop Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635169BB28441AEF00626EB3 /* Stop Program.swift */; };
 		636F010D28428D6A00A991CD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F010C28428D6A00A991CD /* main.swift */; };
 		636F011528428D9600A991CD /* DavidFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 636F011428428D9600A991CD /* DavidFoundation */; };
-		636F0117284290F800A991CD /* App State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F0116284290F800A991CD /* App State.swift */; };
 		6383921C28454C9300AADF43 /* Get Current Date and Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383921B28454C9300AADF43 /* Get Current Date and Time.swift */; };
 		6383921E28454EA900AADF43 /* Format Date for Printing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383921D28454EA900AADF43 /* Format Date for Printing.swift */; };
+		6383922128457AF700AADF43 /* Log Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383922028457AF700AADF43 /* Log Item.swift */; };
+		6383922328457CDC00AADF43 /* Date Component to Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383922228457CDC00AADF43 /* Date Component to Date.swift */; };
+		638392252846186E00AADF43 /* Log Time to File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638392242846186E00AADF43 /* Log Time to File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +35,11 @@
 		635169BB28441AEF00626EB3 /* Stop Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop Program.swift"; sourceTree = "<group>"; };
 		636F010928428D6A00A991CD /* StudyBuddy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudyBuddy; sourceTree = BUILT_PRODUCTS_DIR; };
 		636F010C28428D6A00A991CD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		636F0116284290F800A991CD /* App State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App State.swift"; sourceTree = "<group>"; };
 		6383921B28454C9300AADF43 /* Get Current Date and Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get Current Date and Time.swift"; sourceTree = "<group>"; };
 		6383921D28454EA900AADF43 /* Format Date for Printing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format Date for Printing.swift"; sourceTree = "<group>"; };
+		6383922028457AF700AADF43 /* Log Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log Item.swift"; sourceTree = "<group>"; };
+		6383922228457CDC00AADF43 /* Date Component to Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Component to Date.swift"; sourceTree = "<group>"; };
+		638392242846186E00AADF43 /* Log Time to File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log Time to File.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,10 @@
 		636F010B28428D6A00A991CD /* StudyBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				6383921F28457AEB00AADF43 /* Structs */,
 				635169B8284419B300626EB3 /* Pages */,
 				636F01182842918C00A991CD /* Logic */,
 				636F010C28428D6A00A991CD /* main.swift */,
-				636F0116284290F800A991CD /* App State.swift */,
 			);
 			path = StudyBuddy;
 			sourceTree = "<group>";
@@ -88,6 +92,7 @@
 		636F01182842918C00A991CD /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				63D4E1C3284CFF8200B1E3CC /* File Management */,
 				636F01192842919200A991CD /* Dates */,
 				635169BB28441AEF00626EB3 /* Stop Program.swift */,
 			);
@@ -99,8 +104,25 @@
 			children = (
 				6383921B28454C9300AADF43 /* Get Current Date and Time.swift */,
 				6383921D28454EA900AADF43 /* Format Date for Printing.swift */,
+				6383922228457CDC00AADF43 /* Date Component to Date.swift */,
+				638392242846186E00AADF43 /* Log Time to File.swift */,
 			);
 			path = Dates;
+			sourceTree = "<group>";
+		};
+		6383921F28457AEB00AADF43 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				6383922028457AF700AADF43 /* Log Item.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		63D4E1C3284CFF8200B1E3CC /* File Management */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "File Management";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				636F0117284290F800A991CD /* App State.swift in Sources */,
+				6383922328457CDC00AADF43 /* Date Component to Date.swift in Sources */,
+				6383922128457AF700AADF43 /* Log Item.swift in Sources */,
 				6383921C28454C9300AADF43 /* Get Current Date and Time.swift in Sources */,
 				6383921E28454EA900AADF43 /* Format Date for Printing.swift in Sources */,
+				638392252846186E00AADF43 /* Log Time to File.swift in Sources */,
 				636F010D28428D6A00A991CD /* main.swift in Sources */,
 				635169BA284419C000626EB3 /* Help.swift in Sources */,
 				635169BC28441AEF00626EB3 /* Stop Program.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 
 func formatDateForPrinting(originalDate: DateComponents) -> String {
-    let date = NSCalendar.current.date(from: originalDate)! as Date
+    let date = convertDateComponentToDate(originalDate)
     
     let formatter = DateFormatter()
     formatter.dateStyle = .medium
